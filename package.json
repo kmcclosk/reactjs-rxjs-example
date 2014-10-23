@@ -1,0 +1,21 @@
+{
+  "name": "react-rxjs-example",
+  "version": "0.1.0",
+  "description": "React/RxJS Example",
+  "main": "index.js",
+  "dependencies": {
+    "reactify": "~0.10.0",
+    "envify": "~1.2.1",
+    "react": "~0.10.0",
+    "director": "~1.2.3",
+    "rx": "~2.2.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "browserify -t reactify src/app.js -o dist/js/bundle.js ",
+    "watch": "watchify -t reactify src/app.js -o dist/js/bundle.js "
+  },
+  "author": "Ken McCloskey <ken.mccloskey@gmail.com> (https://github.com/kmcclosk)",
+  "license": "Apache Version 2"
+}
